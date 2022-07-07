@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="CLIMA"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:id="@+id/firstciudad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="380dp"
+        android:src="@drawable/icon_arequipa"
+        android:onClick="Temp_Arequipa"/>
+
+    <ImageView
+        android:id="@+id/secondciudad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="380dp"
+        android:src="@drawable/lima"
+        android:onClick="Temp_Lima"/>
+
+    <ImageView
+        android:id="@+id/thirdciudad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="380dp"
+        android:src="@drawable/pichu"
+        android:onClick="Tempo_Cuzco"/>
+
+    <TextView
+        style="@style/text_names"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="350dp"
+        android:text="AREQUIPA"
+        />
+
+    <TextView
+        style="@style/text_names"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="350dp"
+        android:text="LIMA" />
+
+    <TextView
+        style="@style/text_names"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="350dp"
+        android:text="CUZCO" />
+
+    <TextView
+        style="@style/text_names"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="250dp"
+        android:id="@+id/ciudad" />
+
+    <TextView
+        android:id="@+id/ciudad_name"
+        style="@style/text_names"
+        android:layout_width="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="250dp" />
+
+    <TextView
+        android:id="@+id/temperatura"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/farenheit"
+        style="@style/text_names"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="150dp" />
+</RelativeLayout>
